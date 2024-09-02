@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+         .moon{
+            display: grid;
+            grid-template-areas: "header1 header1 header3"
+                                   "main1 aside  aside  "
+                                   "main1 footer footer";
+                                   border-radius: 10px;
+                                   gap: 20px;
+                                   /* background-color: rgb(128, 68, 0); */
+                                   box-shadow: 10px 20px 10px deeppink;
+
+
+        }
+        .img1{
+            grid-area: header1;
+           
+        }
+        .img2{
+            grid-area: header3;
+        }
+        .img3{
+            grid-area: main1;
+        }
+        .img4{
+            grid-area: aside;
+        }
+        .img5{
+            grid-area: footer;
+        }
+        img{
+            height: 100%;
+            width: 100%;
+          
+        }
+        .img1:hover{
+            transform: rotate3d(1,1,1,56deg);
+        }
+        .img2:hover{
+            transform: translate3d(250px,250px,150px);
+        }
+        .img3:hover{
+            transform: scale3d(2,3,2);
+        }
+        .img4:hover{
+            transform: perspective(1500px) rotateX(45deg) ;
+        }
+        .img5:hover{
+            transform: perspective(1500px) translate3d(250px,250px,250px) ;
+        }
+    </style>
+</head>
+<body>
+    <div class="rain">
+        <img  class="rain img1" src="./rain1.jpeg ">
+        <img class="clouds img2" src="./cloud.jpeg">
+        <img class="nature img3" src="./nature1.jpeg">
+        <img class="birds img4" src="./bird.jpeg">
+        <img class="floating img5" src="./floating.jpeg">
+    
+    </div>
+</body>
+</html>
